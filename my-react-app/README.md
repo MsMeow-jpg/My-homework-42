@@ -81,17 +81,21 @@ HOMEWORK 42/
 ⚙️ Installation and Launch
 1. Clone the repository:
 ```bash
-git clone https://github.com/MsMeow-jpg/My-homework-41.git
+git clone https://github.com/MsMeow-jpg/My-homework-42.git
 ```
 2. Go to the project folder:
 ```bash
-cd My-homework-41/my-react-app
+cd My-homework-42/my-react-app
 ```
 3. Install dependencies:
 ```bash
 npm install
 ```
-4. Launch the project:
+4. Install Axios:
+```bash
+npm install axios
+```
+5. Launch the project:
 ```bash
 npm run dev
 ```
@@ -104,25 +108,43 @@ http://localhost:5173
 🌐 Demo
 
 🔗 Live demo:
-https://my-homework-41.vercel.app/
+https://my-homework-42.vercel.app/
 ---
 📦 Functionality
-- MessageComponent uses the use() hook to read data from a Promise
-- asynchronous message loading is wrapped with Suspense
-- fallback message is displayed while data is loading
-- ErrorBoundary catches component rendering errors
-- counter updates its value with useState
-- Vite starter design with hero image, React and Vite logos, and useful links
+- DataFetcher uses useEffect to start an API request
+- data is fetched from JSONPlaceholder API using axios
+- asynchronous request is handled with async/await
+- loading message is displayed while data is loading
+- error message is displayed if the request fails
+- fetched data is saved in component state
+- postId is passed as a prop from App.jsx
+- when postId changes, the component sends a new request
+- buttons allow switching between different scroll records
+- custom Ale Abbey inspired design is used for the interface
 ---
 🧠 What we learned
-- Creating React components
-- Splitting components into separate files
-- Using the use() hook with asynchronous data
-- Working with Promise
-- Using Suspense for async rendering
-- Handling errors with ErrorBoundary
-- Managing state with useState
-- Vite project structure
+- Creating a React project with Vite
+- Installing and using Axios
+- Creating components in separate files
+- Using useEffect for side effects
+- Making asynchronous API requests
+- Working with async/await
+- Managing loading, error, and data states
+- Passing props between components
+- Refetching data when a dependency changes
+- Using conditional rendering in React
+- Styling a React app with custom CSS
+- Creating a themed UI design
+---
+🎨 Design
+The application uses a medieval abbey-inspired visual style:
+
+- parchment-style content cards
+- warm brown and golden colors
+- scroll-themed data records
+- wax seal decoration
+- tavern and monastery archive atmosphere
+- custom styled buttons and loading state
 ---
 ✍️ Author
 
@@ -131,3 +153,5 @@ GitHub: MsMeow-jpg
 📌 Note
 
 This project was completed as part of a React + Vite course assignment.
+
+The main goal of the project is to practice fetching data from an API using axios, useEffect, and async/await, while also handling loading and error states correctly.
